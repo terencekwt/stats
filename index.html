@@ -3,17 +3,17 @@ layout: page
 description: "Statistical Blog"
 ---
 
-<h1>The blog is under construction!</h1>
-
+<div class="row">
 {% for post in paginator.posts %}
 
+<!--
 <div class="media">
                 <div class="media-left">
-                    <a href="#">
-                        <img class="media-object" src="/img/post-sample-image.jpg" width="70px" alt="...">
+                    <a href="http://terencektam.com">
+                        <img class="media-object" src="http://terencektam.com/images/thumbs/bart_thumb.png"  alt="...">
                     </a>
                 </div>
-                <div class="media-body post-preview">
+                <div class="post-preview media-body">
                     <a href="{{ post.url | prepend: site.baseurl }}">
                         <h3 class="media-heading post-title">{{ post.title }}</h3>
                         <h4 class="post-subtitle">
@@ -23,7 +23,8 @@ description: "Statistical Blog"
                     <span class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</span>
                 </div>   
             </div>
-<!--
+-->
+
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">            {{ post.title }}
@@ -36,9 +37,10 @@ description: "Statistical Blog"
     </a>
     <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
 </div>
--->
-<hr>
+
+<hr/>
 {% endfor %}
+</div>
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
