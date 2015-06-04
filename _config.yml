@@ -1,13 +1,14 @@
 # Site settings
 title: Terence Tam
 header-img: img/bg-sf.jpg
-email: your-email@yourdomain.com
 description: "Terence's Blog"
 baseurl: ""
 url: "http://terencekwt.github.io"
-twitter_username:
-github_username:
-facebook_username:
+twitter_username: ilovepython
+github_username: terencekwt
+flickr_username: ilovepython
+linkedin_url: http://linkedin.com/in/terencektam
+
 
 # Build settings
 markdown: kramdown
