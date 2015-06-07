@@ -1,9 +1,9 @@
 ---
-layout:     post
-title:      "Efficient Frontier"
-subtitle:   "Problems look mighty small from 150 miles up"
-date:       2014-10-24 12:00:00
-author:     "Start Bootstrap"
+title: "The Efficient Frontier"
+subtitle: "Deriving Markowitz's equation"
+author: Terence Tam
+date: 2015-06-07 12:00:00
+layout: post
 header-img: "img/post-bg-06.jpg"
 ---
 

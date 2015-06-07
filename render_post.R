@@ -5,7 +5,7 @@ options(stringsAsFactors = FALSE)
 # http://www.jonzelner.net/jekyll/knitr/r/2014/07/02/autogen-knitr/
 # http://gtog.github.io/workflow/2013/06/12/rmarkdown-to-rbloggers/
 
-KnitPost <- function(bashwd = "", convert_file = "", overwrite = FALSE) {
+KnitPost <- function(bashwd = "", convert_file = "", overwrite = FALSE, date="") {
    # CONVERT ALL RMD FILES TO MARKDOWN?
    #    REQUIRED: overwrite
    # CONVERT A SPECIFIC RMD FILE TO MARKDOWN?
@@ -109,9 +109,9 @@ KnitPost <- function(bashwd = "", convert_file = "", overwrite = FALSE) {
       setwd(bashwd)
       convert.path <- paste0(bashwd, "/", convert_file)
       md.path <-
-         paste0(posts.path, "/",
+         paste0(posts.path, "/", date, "-",
          basename(gsub(pattern = "\\.Rmd$",
-            replacement = ".md",
+            replacement = ".markdown",
             x = convert_file)))
       # KNITTING ====
       message(paste0("=== KnitPost(", convert.path, ")"))

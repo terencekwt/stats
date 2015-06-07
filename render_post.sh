@@ -6,7 +6,7 @@ function show_help {
     echo ""
     echo "-c   convert all _knitr/*.Rmd files to _posts/*.md (does not overwrite existing md)"
     echo "-o   overwrite existing *.md files"
-   echo "-f   convert '~/jekyll/chepec/_knitr/<filename>.Rmd' to md in _posts"
+    echo "-f   convert '_knitr/<filename>.Rmd' to markdown in _posts"
     echo "-b   build the jekyll site"
     echo "-s   send changes to live dir"
     echo "-h   show this help"
@@ -70,9 +70,9 @@ shift $((OPTIND-1))
 if [ "$convert" = true ] ; then
     echo ">>>> jc: Converting RMarkdown to Markdown (overwrite = $overwrite_md)"
     if [ "$overwrite_md" = true ] ; then
-        Rscript -e "source('~/jekyll/chepec/_knitr/render_post.R'); KnitPost(overwrite=TRUE)"
+        Rscript -e "source('./render_post.R'); KnitPost(overwrite=TRUE)"
     else
-        Rscript -e "source('~/jekyll/chepec/_knitr/render_post.R'); KnitPost()"
+        Rscript -e "source('./render_post.R'); KnitPost()"
     fi
 fi
 
@@ -82,7 +82,7 @@ if [ "$convert_file" = true ] ; then
    echo ">>>> jc: Converting file" $rmdfile
    # check that $rmdfile exists
    if [ -f $rmdfile ]; then  
-      Rscript -e "source('./render_post.R'); KnitPost(bashwd='$bashpwd',convert_file='$rmdfile')"
+       Rscript -e "source('./render_post.R'); KnitPost(bashwd='$bashpwd',convert_file='$rmdfile',date='$(date +'%Y-%m-%d')')"
    else
       show_help
       exit 0
