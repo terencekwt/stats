@@ -1,4 +1,5 @@
 _site
+_knitr/*.html
 node_modules
 **.un
 **.un~
