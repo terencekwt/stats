@@ -18,7 +18,7 @@ KnitPost <- function(bashwd = "", convert_file = "", overwrite = FALSE, date="")
    #            when converting all Rmd files
 
    # directory of jekyll blog (including trailing slash)
-   site.path <- "/Users/ttam/Code/terencekwt.github.io/"
+   site.path <- "~/Code/terencekwt.github.io/"
    # directory where your Rmd-files reside (relative to base)
    rmd.path <- paste0(site.path, "_knitr")
    # directory to save figures
