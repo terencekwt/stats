@@ -1,4 +1,4 @@
-#Terence Stats Blog
+# Terence's Statistics Blog
 
 This is hosting my stats blog at (http://statsblogs.terencektam.com/). The template is powered by Clean Blog by Start Bootstrap, with Jekyll enabled.
 
