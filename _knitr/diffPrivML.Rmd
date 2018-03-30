@@ -15,4 +15,4 @@ To analyze and potentially solve this problem, one unified framework proposed by
 
 Therefore, we developed a R package, diffPrivML, that aims to put these differential private enhanced ML algorithms in the hands of data practitioners. Just like how a unified framework is developed to measure differential privacy, diffPrivML is a precursor in standardizing a library of ML algorithms and workflows that have differential privacy baked in. End users do not need to worry about HOW to perturb the data to release their models; the ML algorithm itself makes the guarantee.
 
-Please view the package here.
+Please view the package [here](https://github.com/terencekwt/diffPrivML) on github.
