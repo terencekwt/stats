@@ -1,1 +1,10 @@
-testing
+---
+title: "Disease-Gene Interactions"
+subtitle: "Applications with Graph Neural Networks and Graph Autoencoders"
+author: Terence Tam
+date: 2024-04-02 9:00:00
+layout: post
+header-img: "img/post-bg-06.jpg"
+---
+
+Read the [blog post](https://medium.com/stanford-cs224w/disease-gene-interactions-with-graph-neural-networks-and-graph-autoencoders-bfae2c28f5ec) in Medium.
